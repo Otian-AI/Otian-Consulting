@@ -1,0 +1,4 @@
+# GitHub Pages serves every file in this repo, so these two need naming to stay off the site.
+exclude:
+  - CLAUDE.md
+  - README.md
