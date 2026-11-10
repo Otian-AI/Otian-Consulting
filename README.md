@@ -20,7 +20,7 @@ The consulting site for Otian AI LLC: Jack and Jett helping small businesses use
 1. Create a GitHub repository for this folder and push it.
 2. In the repository's Settings, Pages: deploy from the `main` branch, root folder.
 3. Where otianai.com's DNS is managed, add a CNAME record: `consulting` pointing to
-   `jettnguyen.github.io`.
+   `otian-ai.github.io`.
 4. Back in Pages, set the custom domain to `consulting.otianai.com` (the `CNAME` file already says
    so) and turn on Enforce HTTPS once the certificate is issued.
 
