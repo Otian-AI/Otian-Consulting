@@ -135,7 +135,7 @@ h3 { font-size: 1.25rem; }
 .top-links { display: flex; gap: 22px; }
 .top-links a { font-size: 0.93rem; font-weight: 500; color: var(--ink-2); text-decoration: none; }
 .top-links a:hover { color: var(--ink); }
-@media (max-width: 900px) { .top-links { display: none; } }
+@media (max-width: 960px) { .top-links { display: none; } }
 @media (max-width: 420px) { .brand-rule, .brand-sub { display: none; } }
 
 /* Hero: the words on the left, the two people on the right. */
