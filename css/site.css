@@ -293,8 +293,14 @@ a.strip-item:hover b { text-decoration: underline; text-decoration-color: var(--
 }
 .shot figcaption { margin-top: 12px; font-size: 0.9rem; color: var(--ink-2); }
 .shots > figcaption { margin-top: 20px; color: var(--ink-2); max-width: 46em; }
+/* A scroll box clips what it holds, so the row runs to the screen's edges with room above and below:
+   a tighter box cut the phones' shadows into a gray rectangle. The padding puts every phone and
+   caption back where it was. */
 @media (max-width: 640px) {
-  .shots-row { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 68%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
+  .shots-row {
+    grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 68%; overflow-x: auto; scroll-snap-type: x mandatory;
+    margin: -24px -16px -48px; padding: 24px 16px 56px; scroll-padding-inline: 16px;
+  }
   .shot { scroll-snap-align: start; }
 }
 
